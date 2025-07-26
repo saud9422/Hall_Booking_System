@@ -1,0 +1,29 @@
+<div class="cantainer">
+  <div class="content">
+    <form #hallForm="ngForm" (ngSubmit)="SaveHall()" class="form">
+
+      <h2>Add Hall</h2>
+
+      <label>Hall Name:</label>
+      <input type="text" name="hallName" class="form-control" [(ngModel)]="hallData.hallName" required><br>
+
+      <label>Location:</label>
+      <input type="text" name="location" class="form-control" [(ngModel)]="hallData.location" required><br>
+
+      <label>Capacity:</label>
+      <input type="number" name="capacity" class="form-control" [(ngModel)]="hallData.capacity" required><br>
+
+      <label>Amenities:</label>
+      <input type="text" name="amenities" class="form-control" [(ngModel)]="hallData.amenities"><br>
+
+      <label>Price:</label>
+      <input type="text" name="price" class="form-control" [(ngModel)]="hallData.price" required><br>
+
+      <label>Image URL:</label>
+      <input type="text" name="imageUrl" class="form-control" [(ngModel)]="hallData.imageUrl"><br>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+  </div>
+</div>

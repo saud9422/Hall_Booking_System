@@ -1,0 +1,55 @@
+
+
+
+<div class="cantainer">
+  <div class="dashboard">
+      <button (click)='hallform()' class="btn">Add Halls</button>
+      <button (click)='deletehall()' class="btn" >Delete Halls</button>
+      <button (click)="deletebooking()" class="btn">Delete Bookings</button>
+      <button class="btn" (click)="messege()">Messeges</button>
+  </div>
+  <div class="view-booking">
+
+    <h2>All Bookings</h2>
+    
+
+<p *ngIf="errorMsg" style="color:red">{{ errorMsg }}</p>
+
+<table class="table table-striped" *ngIf="bookings.length">
+  <thead>
+    <tr>
+      <th>Booking Code</th>
+      <th>Hall ID</th>
+      <th>Hall Name</th>
+      <th>Username</th>
+      <th>Phone No</th>
+      <th>Adhaar No</th>
+      <th>Address</th>
+      <th>Booking Date</th>
+      <th>Event</th>
+      <th>Number of Days</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let booking of bookings">
+      <td>{{ booking.booking_code }}</td>
+      <td>{{ booking.hall_id }}</td>
+      <td>{{ booking.hall_name }}</td>
+      <td>{{ booking.username }}</td>
+      <td>{{ booking.phone_no }}</td>
+      <td>{{ booking.adhaar_no }}</td>
+      <td>{{ booking.address }}</td>
+      <td>{{ booking.booking_date | date:'dd/MM/yyyy' }}</td> <!-- Convert epoch to date -->
+      <td>{{ booking.event }}</td>
+      <td>{{ booking.number_of_days }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<p *ngIf="!bookings.length && !errorMsg">Loading bookings...</p>
+
+
+  </div>
+</div>
+
+

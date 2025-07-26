@@ -1,0 +1,18 @@
+.cantainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.login{
+    width: 30rem;
+    border: 1px solid rgb(190, 184, 184);
+    padding: 50px 20px ;
+    border-radius: 10px;
+    background-color: rgb(243, 243, 245);
+    color: rgb(0, 0, 0);
+    max-width: 80%;
+    margin-top: 10px;
+}

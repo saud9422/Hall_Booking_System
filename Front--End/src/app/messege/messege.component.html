@@ -1,0 +1,19 @@
+<div class="cantainer">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Messege</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr *ngFor="let item of messege">
+            <td>{{item.name}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.messege}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,35 @@
+.cantainer{
+    width: 100%;
+   
+    display: flex;
+}
+.dashboard{
+    position: fixed;
+    border: 1px solid black;
+    height: 100%;
+    width: max-content;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px 10px;
+    gap: 10px;
+    background: rgb(30, 30, 30);
+    color: aliceblue;
+    
+}
+.dashboard .btn{
+    color: aliceblue;
+    background: rgb(0, 110, 255);
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.dashboard .btn:hover{
+    color: rgb(0, 98, 255);
+    background: #ffffff;
+    transition: 0.5s;
+    
+}
+.view-booking{
+    margin: 20px 0 0 180px
+    
+}

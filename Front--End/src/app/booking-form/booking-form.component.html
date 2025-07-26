@@ -1,0 +1,30 @@
+<div class="cantainer">
+    <h2>Booking Form</h2>
+    <div class="booking-form">
+
+        <label for="username">Username :</label>
+        <input type="text" class="form-control" name="username" [(ngModel)]="bookingdata.username" placeholder="Enter Your Name" required>
+        <br>
+         <label for="phone_no">Phone no :</label>
+          <input type="number" class="form-control" name="phone_no" [(ngModel)]="bookingdata.phone_no"  placeholder="Enter Your phone" required>
+          <br>
+           <label for="username">Adhaar no :</label>
+            <input type="number" class="form-control" name="adhaar_no" [(ngModel)]="bookingdata.adhaar_no"  placeholder="Enter Your adhaar" required>
+            <br>
+             <label for="booking_date">Event Date :</label>
+              <input type="date" class="form-control" name="booking_date" [(ngModel)]="bookingdata.booking_date" placeholder="Enter Booking Date" required>
+              <br>
+               <label for="event">Event :</label>
+                <input type="text" class="form-control" name="event" [(ngModel)]="bookingdata.event" placeholder="Enter Event Name" required>
+                <br>
+                 <label for="address">Address :</label>
+                 <input type="text" class="form-control" name="address" [(ngModel)]="bookingdata.address" placeholder="Enter Your Address" required>
+                <br>
+                 <label for="number_of_days">Day of Bookings :</label>
+                  <input type="number" class="form-control" name="number_of_days" [(ngModel)]="bookingdata.number_of_days" placeholder="Enter Your Day of Booking" required>
+                  <br>
+                  
+                  <button class="btn btn-primary" (click)="saveBooking()">Book</button>
+
+    </div>
+</div>
